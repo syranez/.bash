@@ -13,3 +13,6 @@ PS1="\[\033[1;34m\][\$(date +%H%M)]"$PS1_GIT"[\u@\h:\w]$\[\033[0m\] "
 if [ -f /usr/bin/vim ]; then
     EDITOR="/usr/bin/vim"
 fi
+
+# set bash in vi mode
+set -o vi
