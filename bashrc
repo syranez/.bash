@@ -8,3 +8,8 @@ PS1_GIT='$(__git_ps1 ["%s"])'
 
 # bash prompt
 PS1="\[\033[1;34m\][\$(date +%H%M)]"$PS1_GIT"[\u@\h:\w]$\[\033[0m\] "
+
+# set vim as $EDITOR if available
+if [ -f /usr/bin/vim ]; then
+    EDITOR="/usr/bin/vim"
+fi
