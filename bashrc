@@ -16,3 +16,8 @@ fi
 
 # set bash in vi mode
 set -o vi
+
+# expand path to /sbin and /usr/sbin.
+#+ it is more comfortable to write ifconfig than /usr/sbin/ifconfig.
+#+ it does not hurt anyways.
+PATH=/sbin:/usr/sbin:$PATH
