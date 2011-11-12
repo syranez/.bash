@@ -2,6 +2,9 @@
 #+ copy'n'pasted from /usr/share/bash-completion/git
 . ~/.bash/git/git-completion.sh
 
+# use colors if available
+. ~/.bash/colors.sh
+
 # part of the bash prompt telling on which
 #+ git branch you are, if any
 PS1_GIT='$(__git_ps1 ["%s"])'
