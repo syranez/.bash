@@ -3,7 +3,7 @@
 . ~/.bash/git/git-completion.sh
 
 # shameless copied the gentoo baselayout /etc/bash/bashrc
-. ~/.bash/gentoo_bashrc
+# . ~/.bash/gentoo_bashrc
 
 # part of the bash prompt telling on which
 #+ git branch you are, if any
@@ -24,3 +24,8 @@ set -o vi
 #+ it is more comfortable to write ifconfig than /usr/sbin/ifconfig.
 #+ it does not hurt anyways.
 PATH=/sbin:/usr/sbin:$PATH
+
+# expand path to include wrapper scripts
+#+ i do not want this scripts machine bound. The scripts should be user bound.
+#+ Thus the scripts are in ~/.wrapper
+PATH=$HOME/.wrapper:$PATH
