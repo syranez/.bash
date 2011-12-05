@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#
+# cleanup
+#
+
+cleanupDvdcss () {
+
+    local path="$HOME/.dvdcss";
+
+    if [ -d "$path" ]; then
+        rm -r $path;
+    fi;
+}
+
+cleanupDvdcss
+
+exit 0;
