@@ -4,15 +4,24 @@
 # cleanup
 #
 
-cleanupDvdcss () {
+# removes a directory
+#+ @param $1 the directory
+cleanupDirectory () {
 
-    local path="$HOME/.dvdcss";
+    local path="$1";
 
     if [ -d "$path" ]; then
         rm -r $path;
     fi;
 }
 
-cleanupDvdcss
+# removes some directorys
+cleanup () {
+
+    cleanupDirectory "$HOME/.dvdcss";
+    cleanupDirectory "$HOME/.covers";
+}
+
+cleanup
 
 exit 0;
