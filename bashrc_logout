@@ -21,6 +21,7 @@ cleanup () {
     cleanupDirectory "$HOME/.dvdcss";
     cleanupDirectory "$HOME/.covers";
     cleanupDirectory "$HOME/.cache";
+    cleanupDirectory "$HOME/.fontconfig";
 }
 
 cleanup
