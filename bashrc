@@ -29,3 +29,6 @@ PATH=/sbin:/usr/sbin:$PATH
 #+ i do not want this scripts machine bound. The scripts should be user bound.
 #+ Thus the scripts are in ~/.wrapper
 PATH=$HOME/.wrapper:$PATH
+
+# include aliases
+source $HOME/.bash/alias
