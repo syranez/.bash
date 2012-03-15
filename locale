@@ -1,0 +1,7 @@
+# localization settings
+
+# english man pages
+LANG="en_EN.UTF-8"
+
+# count in C order
+LC_COLLATE="C"

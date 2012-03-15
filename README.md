@@ -15,6 +15,11 @@
 
 The alias file is sourced by bashrc. It defines currently an alias for jshint.
 
+### Benefits
+
+1. English locale in LANG (man pages)
+1. C-Ordering LC_COLLATE
+
 ## Dependencys
 
 1. For the alias jshint nodejs, npm and jshint have to be installed.
