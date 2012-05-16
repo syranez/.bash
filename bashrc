@@ -32,3 +32,9 @@ PATH=$HOME/.wrapper:$PATH
 
 # include aliases
 source $HOME/.bash/alias
+
+# set locale settings
+source $HOME/.bash/locale
+
+# export node modules folder
+export NODE_PATH=/usr/lib/node_modules
