@@ -5,3 +5,6 @@
 # jshint alias
 alias jshint=/usr/lib/node_modules/lib/node_modules/jshint/bin/hint
 
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
