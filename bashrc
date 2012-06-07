@@ -38,3 +38,6 @@ source $HOME/.bash/locale
 
 # export node modules folder
 export NODE_PATH=/usr/lib/node_modules
+
+# set vim as git pager
+declare -x GIT_PAGER="vim - -R -c 'set foldmethod=syntax'"
