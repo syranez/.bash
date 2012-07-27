@@ -19,6 +19,9 @@ The alias file is sourced by bashrc. It defines currently an alias for jshint.
 
 1. English locale in LANG (man pages)
 1. C-Ordering LC_COLLATE
+1. Bash prompt
+    1.Shows the current branch if cwѕ is versionized by git.
+    1.Shows the status of the last invoked command.
 
 ## Dependencys
 

@@ -2,6 +2,9 @@
 #+ copy'n'pasted from /usr/share/bash-completion/git
 . ~/.bash/git/git-completion.sh
 
+# shows the status of the last command in prompt
+. ~/.bash/prompt-show-status.bash
+
 # shameless copied the gentoo baselayout /etc/bash/bashrc
 # . ~/.bash/gentoo_bashrc
 
@@ -9,8 +12,11 @@
 #+ git branch you are, if any
 PS1_GIT='$(__git_ps1 ["%s"])'
 
+# part of the bash prompt telling the result of last command.
+PS1_STATUS='$(__bash_prompt_last $?)'
+
 # bash prompt
-PS1="\[\033[1;34m\][\$(date +%H%M)]"$PS1_GIT"[\u@\h:\w]$\[\033[0m\] "
+PS1="\[\033[1;34m\]"$PS1_STATUS"[\$(date +%H%M)]"$PS1_GIT"[\u@\h:\w]$\[\033[0m\] "
 
 # set vim as $EDITOR if available
 if [ -f /usr/bin/vim ]; then
