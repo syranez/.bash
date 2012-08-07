@@ -3,8 +3,12 @@
 # aliases
 
 # jshint alias
-alias jshint=/usr/lib/node_modules/lib/node_modules/jshint/bin/hint
+alias jshint=/usr/lib/node_modules/jshint/bin/hint
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+
+# enable per default all Warnings, as recommended by JPL C-Coding-Standard D-60411
+# removed stupid legacy stuff -Wtraditional
+alias gcc='gcc -Wall -pedantic -std=iso9899:1999 -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wconversion'
 
