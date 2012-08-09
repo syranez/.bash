@@ -12,3 +12,6 @@ alias grep='grep --color=auto'
 # removed stupid legacy stuff -Wtraditional
 alias gcc='gcc -Wall -pedantic -std=iso9899:1999 -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wconversion'
 
+# fixes "cannot connect to X server " errors
+#+ it sets hard DISPLAY to 0.0, exports it and allows local connections.
+alias fixX="DISPLAY=:0.0;export DISPLAY;xhost +local:0"
