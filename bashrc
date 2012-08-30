@@ -31,6 +31,11 @@ set -o vi
 #+ it does not hurt anyways.
 PATH=/sbin:/usr/sbin:$PATH
 
+# expand path to include executable files
+#+ i do not want this files machine bound. The files should be user bound.
+#+ Thus the files are in ~/.bin
+PATH=$HOME/.bin:$PATH
+
 # expand path to include wrapper scripts
 #+ i do not want this scripts machine bound. The scripts should be user bound.
 #+ Thus the scripts are in ~/.wrapper
