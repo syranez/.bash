@@ -10,13 +10,13 @@
 
 # part of the bash prompt telling on which
 #+ git branch you are, if any
-PS1_GIT='$(__git_ps1 ["%s"])'
+PS1_GIT='$(__git_ps1 "(%s)")'
 
 # part of the bash prompt telling the result of last command.
 PS1_STATUS='$(__bash_prompt_last $?)'
 
 # bash prompt
-PS1="\[\033[1;34m\]"$PS1_STATUS"[\$(date +%H%M)]"$PS1_GIT"[\u@\h:\w]$\[\033[0m\] "
+PS1="\[\033[1;34m\]"$PS1_STATUS$PS1_GIT"[\$(date +%H:%M)][\u@\h:\w]$\[\033[0m\] "
 
 # set vim as $EDITOR if available
 if [ -f /usr/bin/vim ]; then
