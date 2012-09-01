@@ -26,6 +26,11 @@ fi
 # set bash in vi mode
 set -o vi
 
+# do not overwrite existing files
+#+ you can always overwrite files with >| if you are sure
+#+ but I prefer removing the file in first place
+set -o noclobber
+
 # expand path to /sbin and /usr/sbin.
 #+ it is more comfortable to write ifconfig than /usr/sbin/ifconfig.
 #+ it does not hurt anyways.

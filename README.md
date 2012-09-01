@@ -22,6 +22,7 @@ The alias file is sourced by bashrc. It defines currently an alias for jshint.
 1. Bash prompt
     1.Shows the current branch if cwѕ is versionized by git.
     1.Shows the status of the last invoked command.
+1. You will never overwrite an existing file with the > operator.
 
 ## Dependencys
 
