@@ -7,6 +7,7 @@ alias jshint=/usr/lib/node_modules/jshint/bin/hint
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias ip='curl ifconfig.me'
 
 # enable per default all Warnings, as recommended by JPL C-Coding-Standard D-60411
 # removed stupid legacy stuff -Wtraditional
