@@ -5,6 +5,9 @@
 # shows the status of the last command in prompt
 . ~/.bash/prompt-show-status.bash
 
+# helper script to activate chrome remote debugging
+. ~/.bash/adb.bash
+
 # shameless copied the gentoo baselayout /etc/bash/bashrc
 # . ~/.bash/gentoo_bashrc
 
