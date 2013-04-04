@@ -58,17 +58,14 @@ PATH=$HOME/.bin:$PATH
 #+ Thus the scripts are in ~/.wrapper
 PATH=$HOME/.wrapper:$PATH
 
-# expand path to include gnu coretuils on os x homebrew if installed
-if [ -f /usr/local/opt/coreutils/libexec/gnubin ]; then
-    PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-    MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-fi
-
 # include aliases
 source $HOME/.bash/alias
 
 # set locale settings
 source $HOME/.bash/locale
+
+# os specific stuff
+source $HOME/.bash/osx
 
 # export node modules folder
 export NODE_PATH=/usr/lib/node_modules
