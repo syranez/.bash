@@ -1,12 +1,17 @@
-#!/bin/bash
+#! /usr/bin/env bash
 #
 # aliases
 
 # jshint alias
 alias jshint=/usr/lib/node_modules/jshint/bin/hint
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
+if [[ ${OSTYPE//[0-9.]/} == 'darwin' ]]; then
+    alias ls="ls -G"
+else
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+fi
+
 alias ip='curl ifconfig.me'
 
 # enable per default all Warnings, as recommended by JPL C-Coding-Standard D-60411
