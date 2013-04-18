@@ -1,7 +1,7 @@
 #! /usr/bin/bash
 
 if [[ ${OSTYPE//[0-9.]/} != 'darwin' ]]; then
-   exit 0;
+    return;
 fi
 
 # expand path to include gnu coretuils on os x homebrew if installed
