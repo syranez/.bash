@@ -29,6 +29,9 @@ fi
 # set bash in vi mode
 set -o vi
 
+# remove flow control
+stty -ixon
+
 # do not overwrite existing files
 #+ you can always overwrite files with >| if you are sure
 #+ but I prefer removing the file in first place
