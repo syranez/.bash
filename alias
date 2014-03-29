@@ -21,3 +21,6 @@ alias gcc='gcc -Wall -pedantic -std=iso9899:1999 -Wshadow -Wpointer-arith -Wcast
 # fixes "cannot connect to X server " errors
 #+ it sets hard DISPLAY to 0.0, exports it and allows local connections.
 alias fixX="DISPLAY=:0.0;export DISPLAY;xhost +local:0"
+
+# english man
+alias man="LANG=en_US.UTF-8 man"
