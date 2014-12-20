@@ -1,7 +1,5 @@
-# bash completion suppport for core Git
-#+ copy'n'pasted from https://github.com/git/git/tree/master/contrib/completion
-. ~/.bash/git/git-completion.bash
-. ~/.bash/git/git-prompt.sh
+# bash utilitys for git
+. ~/.bash/git.bash
 
 # shows the status of the last command in prompt
 . ~/.bash/prompt-show-status.bash
@@ -11,10 +9,6 @@
 
 # shameless copied the gentoo baselayout /etc/bash/bashrc
 # . ~/.bash/gentoo_bashrc
-
-# part of the bash prompt telling on which
-#+ git branch you are, if any
-PS1_GIT='$(__git_ps1 "(%s)")'
 
 # part of the bash prompt telling the result of last command.
 PS1_STATUS='$(__bash_prompt_last $?)'
