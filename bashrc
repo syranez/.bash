@@ -1,6 +1,7 @@
 # bash completion suppport for core Git
-#+ copy'n'pasted from /usr/share/bash-completion/git
-. ~/.bash/git/git-completion.sh
+#+ copy'n'pasted from https://github.com/git/git/tree/master/contrib/completion
+. ~/.bash/git/git-completion.bash
+. ~/.bash/git/git-prompt.sh
 
 # shows the status of the last command in prompt
 . ~/.bash/prompt-show-status.bash
