@@ -6,3 +6,5 @@ export LC_MESSAGES="en_US.UTF-8"
 
 # count in C order
 export LC_COLLATE="C"
+
+export declare LESSCHARSET="utf-8"
